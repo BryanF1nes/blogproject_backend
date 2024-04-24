@@ -1,6 +1,7 @@
 ## TODO
 
 - [x] Create backend with DB connection and Schemas
+- [x] Create and Seed Database
 - [ ] RESTful organization for Routes and Controllers
 - [ ] Test Routes with postman
 - [ ] Integrate Authentication and Authorization
