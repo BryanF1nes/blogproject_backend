@@ -8,6 +8,7 @@ const logger = require("morgan");
 // Routes
 const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/author");
+const postRouter = require("./routes/post");
 
 const app = express();
 
@@ -31,7 +32,8 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
-app.use("/author", authorRouter);
+// app.use("/author", authorRouter);
+app.use("/post", postRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
