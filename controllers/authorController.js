@@ -2,5 +2,7 @@ const Author = require("../models/author");
 const asyncHandler = require("express-async-handler");
 
 exports.author_get = asyncHandler(async (req, res, next) => {
-  res.send("Not implemented: Author CREATE GET post");
+  const allAuthors = await Author.find({});
+
+  res.json(allAuthors);
 });
